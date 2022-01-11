@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import Single from './Single';
 
-const Grid = () => {
+const Grid = ({items}) => {
   const renderList = () => {
     return items.map((item) => (
-      <Single />
+      <Single item={item} key={item.id}/>
     ));
   }
 

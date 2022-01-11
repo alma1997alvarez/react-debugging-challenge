@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Single = () => {
+const Single = ({item}) => {
   return (
     <li className="col l6 s12">
       <div className="card">

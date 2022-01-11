@@ -12,7 +12,7 @@ const App = () => {
     setUserClicks(prevUserClicks => ++prevUserClicks);
   }
     return (
-      <div onClick={increaseUserClicks()}>
+      <div onClick={increaseUserClicks}>
         <div className="navbar-fixed">
           <nav className="blue lighten-2">
             <div className="nav-wrapper">
@@ -22,7 +22,7 @@ const App = () => {
         </div>
         <h2>User Clicks: {userClicks}</h2>
         <div>
-            <Grid items={course}/>
+            <Grid items={courses}/>
         </div>
       </div>
     );
